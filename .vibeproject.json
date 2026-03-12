@@ -1,0 +1,520 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "demo",
+  "rootPath": "/home/vectone/LEARNING/demo",
+  "createdAt": "2026-03-07T15:27:57.031Z",
+  "lastUpdated": "2026-03-10T05:00:53.106Z",
+  "summary": "The VibeCoding Project is a multi-faceted software system featuring an AI-driven VS Code extension that orchestrates surgical code edits and patches. It also includes a Contact Center as a Service (CCaaS) backend built with Node.js, Express, and Socket.io to handle real-time agent routing and customer interactions.",
+  "techStack": [
+    "TypeScript",
+    "Python"
+  ],
+  "suggestedEnhancements": [
+    "Integrate automated unit test execution within the SmartEditor to validate AI-driven code patches before they are applied to the project files.",
+    "Implement a robust message broker such as Redis or RabbitMQ in the CCaaS engine to scale WebSocket connections and ensure reliable agent state recovery.",
+    "Develop 'demo.py' into a comprehensive demonstration script or end-to-end integration test suite to showcase the system's capabilities."
+  ],
+  "folders": [],
+  "files": [
+    {
+      "path": "demo.py",
+      "name": "demo.py",
+      "extension": ".py",
+      "sizeBytes": 0,
+      "lastModified": "2026-03-09T17:20:12.606Z",
+      "contentHash": "00001505",
+      "purpose": "This is an empty Python file that currently performs no operations.",
+      "issues": [],
+      "healthScore": 100,
+      "dependencies": [],
+      "updates": [],
+      "lastAnalyzed": "2026-03-10T04:37:19.675Z"
+    },
+    {
+      "path": "complex.ts",
+      "name": "complex.ts",
+      "extension": ".ts",
+      "sizeBytes": 13108,
+      "lastModified": "2026-03-10T04:48:19.438Z",
+      "contentHash": "9a7dc240",
+      "purpose": "Provides a SmartEditor class that orchestrates AI-driven, surgical code modifications by planning edits, generating patches, and updating specific files in a VS Code workspace.",
+      "issues": [
+        {
+          "line": 130,
+          "description": "Using the global Node.js Buffer is discouraged for VS Code extensions that might run in a web context; consider using TextDecoder instead.",
+          "severity": "warning"
+        },
+        {
+          "line": 165,
+          "description": "The file is truncated mid-statement ('const aiResponse = await t'), resulting in invalid syntax.",
+          "severity": "error"
+        }
+      ],
+      "healthScore": 72,
+      "dependencies": [
+        "vscode",
+        "path",
+        "./streamingWriter",
+        "./projectAnalyzer",
+        "./editPlanner",
+        "./analysisStorage"
+      ],
+      "updates": [
+        {
+          "id": "mmk4i5rmlnznq",
+          "timestamp": "2026-03-10T04:41:50.770Z",
+          "description": "User requested: fix issue in complex file",
+          "approach": "Smart surgical patch edit",
+          "outcome": "File updated successfully",
+          "status": "successful",
+          "confirmedBy": "user"
+        },
+        {
+          "id": "mmk4pb422omyn",
+          "timestamp": "2026-03-10T04:47:24.290Z",
+          "description": "User requested: fix issue in complex file",
+          "approach": "Smart surgical patch edit",
+          "outcome": "File updated successfully",
+          "status": "successful",
+          "confirmedBy": "user"
+        }
+      ],
+      "lastAnalyzed": "2026-03-10T04:49:02.308Z"
+    }
+  ],
+  "userRequests": [
+    {
+      "id": "mmghe4tlmv5hv",
+      "timestamp": "2026-03-07T15:31:33.225Z",
+      "request": "do you find any issue in crm project ?",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "I will help you analyze your CRM project for potential issues, bugs, or architectural improvements. First, I need to locate the specific project folder to identify which code base to check.\n\nI am scan"
+    },
+    {
+      "id": "mmghf13r53rqg",
+      "timestamp": "2026-03-07T15:32:15.063Z",
+      "request": "/home/vectone/LEARNING/demo/crm_project\n\ndo you find any issue in crm project ?",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "I will start by analyzing the project structure of `/home/vectone/LEARNING/demo/crm_project` to understand the technology stack (e.g., Python, Node.js, etc.) and identify any obvious configuration or "
+    },
+    {
+      "id": "mmghuzmau2nys",
+      "timestamp": "2026-03-07T15:44:39.634Z",
+      "request": "do you find any issue in crm project ?",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmghveja2hsz7",
+      "timestamp": "2026-03-07T15:44:58.966Z",
+      "request": "do you find any issue in crm project ?",
+      "approach": "Answered via project_query endpoint",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmghx66q0i8l7",
+      "timestamp": "2026-03-07T15:46:21.458Z",
+      "request": "fix those issues",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmghx688xf2jy",
+      "timestamp": "2026-03-07T15:46:21.512Z",
+      "request": "fix those issues",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmixypvix7tox",
+      "timestamp": "2026-03-09T08:50:59.838Z",
+      "request": "hi",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Hello! Great to connect. What are we building today?"
+    },
+    {
+      "id": "mmizhp8txyu0w",
+      "timestamp": "2026-03-09T09:33:45.101Z",
+      "request": "run main.py",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmizi45fy6ya4",
+      "timestamp": "2026-03-09T09:34:04.419Z",
+      "request": "projects in the folder",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "I will scan your current workspace to list all existing projects and directories. Once the results are returned, please let me know which project you would like to explore, modify, or run.\nFolder sear"
+    },
+    {
+      "id": "mmizixqnfub24",
+      "timestamp": "2026-03-09T09:34:42.767Z",
+      "request": "run main.py",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj02gseji2s9",
+      "timestamp": "2026-03-09T09:49:53.918Z",
+      "request": "write a Python function to reverse a string",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj03vnnngo52",
+      "timestamp": "2026-03-09T09:50:59.843Z",
+      "request": "build a simple calculator in JavaScript",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj07feurwnl2",
+      "timestamp": "2026-03-09T09:53:45.414Z",
+      "request": "create a todo app project with Python FastAPI backend",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0gutxjwass",
+      "timestamp": "2026-03-09T10:01:05.301Z",
+      "request": "update crm_project1 add 5 models in that and add db connection",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0guwhxhvis",
+      "timestamp": "2026-03-09T10:01:05.393Z",
+      "request": "update crm_project1 add 5 models in that and add db connection",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmj0o6c5fzryy",
+      "timestamp": "2026-03-09T10:06:46.805Z",
+      "request": "run hello.py",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0od0crb74w",
+      "timestamp": "2026-03-09T10:06:55.452Z",
+      "request": "execute the calculator file",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0oxws0g4yb",
+      "timestamp": "2026-03-09T10:07:22.540Z",
+      "request": "run this",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0prnlbckc1",
+      "timestamp": "2026-03-09T10:08:01.089Z",
+      "request": "fix the current file",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0prqfgwehp",
+      "timestamp": "2026-03-09T10:08:01.191Z",
+      "request": "fix the current file",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmj0ro2lgftpi",
+      "timestamp": "2026-03-09T10:09:29.757Z",
+      "request": "undo",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0sexfg5nz2",
+      "timestamp": "2026-03-09T10:10:04.563Z",
+      "request": "undo last fix",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0u28zfl4rw",
+      "timestamp": "2026-03-09T10:11:21.443Z",
+      "request": "do you find any issue in my project?",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj0un5obukm4",
+      "timestamp": "2026-03-09T10:11:48.540Z",
+      "request": "do you find any issue in my project?",
+      "approach": "Answered via project_query endpoint",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj522afgo594",
+      "timestamp": "2026-03-09T12:09:33.207Z",
+      "request": "create a ai ccaas project",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj7r53uc61r8",
+      "timestamp": "2026-03-09T13:25:02.491Z",
+      "request": "hi",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Hello! Great to connect. What are we building today?"
+    },
+    {
+      "id": "mmj7rggqzh7jg",
+      "timestamp": "2026-03-09T13:25:17.210Z",
+      "request": "write code for ludo game",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmj95mf6eqvks",
+      "timestamp": "2026-03-09T14:04:17.730Z",
+      "request": "hi",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Hello! Great to connect. What are we building today?"
+    },
+    {
+      "id": "mmj95stxqso7v",
+      "timestamp": "2026-03-09T14:04:26.037Z",
+      "request": "hio",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Hello! Great to connect. What are we building today?"
+    },
+    {
+      "id": "mmj95yd8yxk0u",
+      "timestamp": "2026-03-09T14:04:33.212Z",
+      "request": "write merge sort code",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjc57zc4s6wb",
+      "timestamp": "2026-03-09T15:27:57.864Z",
+      "request": "create crm project",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjc7t25hgx63",
+      "timestamp": "2026-03-09T15:29:58.493Z",
+      "request": "hi",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Hello! Great to connect. What are we building today?"
+    },
+    {
+      "id": "mmjc7xlr6mj3c",
+      "timestamp": "2026-03-09T15:30:04.383Z",
+      "request": "create crm project",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjej0mnv5r27",
+      "timestamp": "2026-03-09T16:34:40.751Z",
+      "request": "fix the issue two_sum",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjej0ohc0uu8",
+      "timestamp": "2026-03-09T16:34:40.817Z",
+      "request": "fix the issue two_sum",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmjersxvuttcv",
+      "timestamp": "2026-03-09T16:41:30.691Z",
+      "request": "fix the issue",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjert0q3eds4",
+      "timestamp": "2026-03-09T16:41:30.794Z",
+      "request": "fix the issue",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmjev2p8ix4vo",
+      "timestamp": "2026-03-09T16:44:03.308Z",
+      "request": "fix the issue",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjev2rzq30r3",
+      "timestamp": "2026-03-09T16:44:03.407Z",
+      "request": "fix the issue",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmjg0ysq1ab6t",
+      "timestamp": "2026-03-09T17:16:37.802Z",
+      "request": "write code for ccaas",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjg8099gsh1k",
+      "timestamp": "2026-03-09T17:22:06.285Z",
+      "request": "fix error in complex.py",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmjg80ayowcqw",
+      "timestamp": "2026-03-09T17:22:06.346Z",
+      "request": "fix error in complex.py",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmk4ddnjhbwwo",
+      "timestamp": "2026-03-10T04:38:07.711Z",
+      "request": "fix issue in complex.py",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmk4ddp9dpabv",
+      "timestamp": "2026-03-10T04:38:07.773Z",
+      "request": "fix issue in complex.py",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmk4i5o9qynb0",
+      "timestamp": "2026-03-10T04:41:50.649Z",
+      "request": "fix issue in complex file",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmk4i5pztnuok",
+      "timestamp": "2026-03-10T04:41:50.711Z",
+      "request": "fix issue in complex file",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    },
+    {
+      "id": "mmk4paypc8sel",
+      "timestamp": "2026-03-10T04:47:24.097Z",
+      "request": "fix issue in complex file",
+      "approach": "Forwarded to AI assistant for processing",
+      "filesAffected": [],
+      "status": "pending",
+      "outcome": ""
+    },
+    {
+      "id": "mmk4pb0snudm9",
+      "timestamp": "2026-03-10T04:47:24.172Z",
+      "request": "fix issue in complex file",
+      "approach": "Detected as edit intent — using smart surgical editor",
+      "filesAffected": [],
+      "status": "successful",
+      "outcome": "Smart edit applied via surgical patches"
+    }
+  ],
+  "totalHealthScore": 86
+}
