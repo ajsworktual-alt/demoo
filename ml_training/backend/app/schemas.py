@@ -10,10 +10,10 @@ class Record(BaseModel):
     status: str
     priority: str
     summary: str
-    score: int = Field(ge=0, le=100)
+    score: int = Field(ge=0, le=100
 
 
-class RecordCreate(BaseModel):
+class RecordCreate(BaseModel
     title: str
     owner: str
     status: str
@@ -29,7 +29,7 @@ class DashboardSummary(BaseModel):
     records: list[Record]
 
 
-class InsightRequest(BaseModel):
+class InsightRequest(BaseModel)
     summary: str
 
 

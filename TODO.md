@@ -1,7 +1,7 @@
 # TODO
 
 ## User Goal
-push to git
+push the code into github
 
 ## Intent
 git
