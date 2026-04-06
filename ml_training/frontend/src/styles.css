@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #11243b, #07111d 58%);
+  color: #f4f7fb;
+}
+
+.workspace-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 20px 72px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7fd7ff;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.metrics article,
+.card,
+.insight-panel {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 18px;
+  backdrop-filter: blur(14px);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+.records {
+  display: grid;
+  gap: 14px;
+}
+
+.card header,
+.card footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.label {
+  text-transform: capitalize;
+  color: #7fd7ff;
+  font-weight: 700;
+}
