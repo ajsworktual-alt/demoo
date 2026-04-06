@@ -9,13 +9,13 @@ git
 ## Project Summary
 Project: demo
 
-The 'demo' project appears to be a learning sandbox containing a mix of standalone scripts and a web-based game. The 'bug_game' subdirectory houses a complete frontend application using HTML, CSS, and JavaScript. The root directory contains independent Python and TypeScript files like 'demo.py' and 'complex.ts' for practicing general programming logic.
+The 'demo' project serves as a monorepo containing standalone utility scripts, a browser-based 'bug_game', and a fullstack 'ml_training' application. The primary fullstack application utilizes a Python backend (likely FastAPI given the structure) for serving ML insights and a TypeScript React/Vite frontend for the dashboard. The repository appears to be a learning or playground environment.
 
 Key files:
-- TODO.md: Tracks planned tasks, known bugs, and future features for the repository.
-- bug_game/index.html: The main entry point for the web-based bug game, structuring the user interface and loading the required styles and scripts. Imports: style.css, game.js.
-- bug_game/game.js: Contains the core game loop, DOM manipulation, and interactive logic for the bug game.
-- bug_game/style.css: Defines the visual aesthetics, layout, and animations for the bug game interface.
+- ml_training/backend/app/main.py: Serves as the entry point for the backend application, initializing the API server and registering routers. Imports: fastapi.FastAPI, app.api.routes. Functions: create_app.
+- ml_training/backend/app/api/routes/dashboard.py: Defines the API endpoints for dashboard-related data, acting as a controller that interfaces with backend services. Imports: fastapi.APIRouter, app.schemas, app.services. Functions: get_dashboard_metrics.
+- ml_training/frontend/src/main.tsx: The entry point for the React application, responsible for mounting the root App component to the DOM. Imports: react, react-dom/client, ./App.tsx. Functions: createRoot, render.
+- ml_training/frontend/src/services/api.ts: Acts as the frontend HTTP client, providing functions to make API calls to the backend and handle responses. Imports: axios. Functions: fetchInsights, fetchRecords.
 
 ## Execution Plan
 - [x] Analyze the relevant files and folders related to the user goal.
